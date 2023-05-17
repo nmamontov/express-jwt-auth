@@ -7,7 +7,8 @@ Database engine to store users - Mongodb
 Place ".env" to root dir with connection string to authenticate by username&password:
 
 Example:
-MONGO_URI="mongodb://usr3:123456@localhost:27017/basicauth?authMechanism=DEFAULT&authSource=basicauth"
+
+    MONGO_URI="mongodb://usr3:123456@localhost:27017/basicauth?authMechanism=DEFAULT&authSource=basicauth"
 
 Routes:
 
