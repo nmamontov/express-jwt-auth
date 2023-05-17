@@ -11,7 +11,7 @@ MONGO_URI="mongodb://usr3:123456@localhost:27017/basicauth?authMechanism=DEFAULT
 
 Routes:
 
-/               - GET   homepage without authorization
-/api/register   - POST  { "username":"username", "password":"password" } to create user
-/api/login      - POST  { "username":"username", "password":"password" } to login and recieve token
-/api/user/      - GET   with Bearer token recieved when login, page for authenticated users.
+    /               - GET   homepage without authorization
+    /api/register   - POST  { "username":"username", "password":"password" } to create user
+    /api/login      - POST  { "username":"username", "password":"password" } to login and recieve token
+    /api/user/      - GET   with Bearer token recieved when login, page for authenticated users.
