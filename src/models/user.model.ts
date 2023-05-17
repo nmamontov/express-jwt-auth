@@ -4,29 +4,6 @@ import bcrypt from 'bcrypt';
 
 const saltRounds = 8
 
-
-
-// export type OrderDocument = mongoose.Document & User;
-
-// const userSchema = new mongoose.Schema(
-//   {
-//     firstName: String,
-//     lastName: String,
-//     idNumber: String,
-//     isPassport: Boolean,
-//     birthDate: String,
-//     phoneNumber: String,
-//     city: String,
-//   },
-//   {
-//     timestamps: true,
-//   }
-// );
-
-
-
-
-
 export interface I_UserDocument extends mongoose.Document {
   name: string;
   password: string;
