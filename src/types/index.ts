@@ -1,9 +1,9 @@
-export type User = {
+export type UserProfile = {
   firstName: string;
   lastName: string;
-  idNumber: string;
-  isPassport: boolean;
-  birthDate: string;
   phoneNumber: string;
-  city: string;
+};
+export type User = {
+  name: string;
+  password: string;
 };

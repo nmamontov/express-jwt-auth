@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import { User } from "../types";
 import bcrypt from 'bcrypt';
 
 const saltRounds = 8

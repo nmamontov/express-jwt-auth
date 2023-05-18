@@ -1,7 +1,7 @@
 import express, { Express, Request, Response } from "express";
 import cors from "cors";
 import { config } from "dotenv";
-import { corsConfig } from "../corsConfig";
+import { corsConfig } from "./corsConfig";
 import { connectDb } from "./database";
 import router from "./routes";
 
