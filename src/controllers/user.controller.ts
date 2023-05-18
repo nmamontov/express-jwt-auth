@@ -1,9 +1,5 @@
 import { Request, Response } from "express";
 import UserModel, { I_UserDocument } from "../models/user.model";
-import { I_UserProfileDocument } from "../models/user.profile.model";
-import { saveUserProfile } from "../services/user.service";
-import { getUserProfile } from "../services/user.service";
-import { getErrorMessage } from '../utils/errors.util';
 
 export const userarea = async (req: Request, res: Response) => {
   const token: any = req.body['token']

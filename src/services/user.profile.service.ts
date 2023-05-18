@@ -6,7 +6,6 @@ import { getErrorMessage } from '../utils/errors.util';
 
 export const saveUserProfile = async (profile: DocumentDefinition<I_UserProfileDocument>): Promise<any> => {
   const existingProfile = await UserProfileModel.findOne({user_id: profile.user_id})
-
   if (!existingProfile){
   try {
     await UserProfileModel.create(profile);
