@@ -17,15 +17,6 @@ const UserProfileSchema: mongoose.Schema<I_UserProfileDocument> = new mongoose.S
    timestamps: true,
  });
 
-//  UserSchema.pre('save', async function (next) {
-//   const user = this;
-//   if (user.isModified('password')) {
-//     user.password = await bcrypt.hash(user.password, saltRounds);
-//   }
-//   next();
-//  });
- 
-
  const UserProfileModel = mongoose.model<I_UserProfileDocument>('UserProfile', UserProfileSchema);
 
  export default UserProfileModel;

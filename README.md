@@ -12,7 +12,12 @@ Example:
 
 Routes:
 
-    /               - GET   homepage without authorization
-    /api/register   - POST  { "username":"username", "password":"password" } to create user
-    /api/login      - POST  { "username":"username", "password":"password" } to login and recieve token
-    /api/user/      - GET   with Bearer token recieved when login, page for authenticated users.
+    /                   - GET   homepage without authorization
+    /api/register       - POST  { "username":"username", "password":"password" } to create user
+    /api/login          - POST  { "username":"username", "password":"password" } to login and recieve token
+    /api/token          - POST  { "refresh_token":"..." } to get new authorization token
+
+    Authorized area (make request with header Authorization: Bearer %token_recieved_when_login% )
+    /api/user/          - GET   home page for authenticated users
+    /api/user/profile   - GET   { "firstName":"...", "lastName":"...", "phoneNumber":"..." }
+    
