@@ -19,5 +19,6 @@ Routes:
 
     Authorized area (make request with header Authorization: Bearer %token_recieved_when_login% )
     /api/user/          - GET   home page for authenticated users
-    /api/user/profile   - GET   { "firstName":"...", "lastName":"...", "phoneNumber":"..." }
+    /api/user/profile   - GET   get current user profile
+    /api/user/profile   - POST  { "firstName":"...", "lastName":"...", "phoneNumber":"..." } to create/update profile
     
